@@ -1,5 +1,11 @@
-vim.opt.clipboard = 'unnamedplus'
-vim.opt.swapfile = false
-vim.opt.termguicolors = true
-vim.opt.wrap = false
-vim.opt.writebackup = false
+local options = {
+	clipboard = 'unnamedplus',
+	swapfile = false,
+	termguicolors = true,
+	wrap = false,
+	writebackup = false,
+}
+
+for k, v in pairs(options) do
+	vim.opt[k] = v
+end
