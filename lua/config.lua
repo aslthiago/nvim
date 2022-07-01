@@ -120,6 +120,14 @@ local groups = {
       autocmd CmdlineLeave /,\\? :set nohlsearch
     augroup end
   ]],
+
+  -- synchronizes plugins automatically
+  [[
+    augroup packer_config
+      autocmd!
+      autocmd BufWritePost packer.lua source <afile> | PackerSync
+    augroup end
+  ]],
 }
 
 for _, g in pairs(groups) do
