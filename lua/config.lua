@@ -1,0 +1,37 @@
+local options = {
+  clipboard      = 'unnamedplus',
+  expandtab      = true,
+  fileencoding   = 'utf-8',
+  ignorecase     = true,
+  lazyredraw     = true,
+  linebreak      = true,
+  list           = true,
+  mouse          = 'nv',
+  number         = true,
+  relativenumber = true,
+  scrolloff      = 2,
+  shell          = 'sh',
+  shiftwidth     = 2,
+  showbreak      = '↳ ',
+  showcmd        = false,
+  showmode       = false,
+  sidescroll     = 4,
+  sidescrolloff  = 4,
+  smartindent    = true,
+  softtabstop    = -1,
+  splitbelow     = true,
+  splitright     = true,
+  swapfile       = false,
+  synmaxcol      = 5000,
+  tabstop        = 2,
+  termguicolors  = true,
+  virtualedit    = 'block',
+  visualbell     = true,
+  whichwrap      = 'b,h,l,s,<,>,[,],~',
+  wrap           = false,
+  writebackup    = false,
+}
+
+for k, v in pairs(options) do
+  vim.opt[k] = v
+end
