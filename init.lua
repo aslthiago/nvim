@@ -14,3 +14,5 @@ if fn.empty(fn.glob(install_path)) > 0 then
   vim.notify 'Installing the plugin manager. Please restart Neovim.'
   vim.cmd [[packadd packer.nvim]]
 end
+
+require 'plugin.packer'
