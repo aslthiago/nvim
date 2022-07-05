@@ -14,6 +14,10 @@ packer.init {
 return packer.startup(function(use)
   use 'wbthomason/packer.nvim'
 
+  use { -- colorscheme
+    'rebelot/kanagawa.nvim',
+  }
+
   if PACKER_BOOTSTRAP then
     require('packer').sync()
   end
