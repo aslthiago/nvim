@@ -104,6 +104,8 @@ local commands = {
   -- [[autocmd BufWritePre * %s/\s\+$//e]],
   -- [[autocmd InsertEnter * norm zz]],
   -- [[autocmd BufWritePost ~/.Xresources !xrdb ~/.Xresources]],
+
+  [[colorscheme kanagawa]], -- rebelot/kanagawa.nvim
 }
 
 for _, c in pairs(commands) do
