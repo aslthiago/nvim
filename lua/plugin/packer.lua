@@ -18,6 +18,10 @@ return packer.startup(function(use)
     'rebelot/kanagawa.nvim',
   }
 
+  use { -- version control
+    'lewis6991/gitsigns.nvim',
+  }
+
   if PACKER_BOOTSTRAP then
     require('packer').sync()
   end
