@@ -16,3 +16,4 @@ if fn.empty(fn.glob(install_path)) > 0 then
 end
 
 require 'plugin.packer'
+require 'plugin.gitsigns'
