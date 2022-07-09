@@ -41,6 +41,21 @@ local keymaps = {
     ['<M-u>']     = [[:retab<CR>]],
     ['<']         = [[<<]],
     ['>']         = [[>>]],
+
+    -- gitsigns
+    ['<Leader>hn'] = [[:Gitsigns next_hunk<CR>]],
+    ['<Leader>hm'] = [[:Gitsigns prev_hunk<CR>]],
+    ['<Leader>hs'] = [[:Gitsigns stage_hunk<CR>]],
+    ['<Leader>hr'] = [[:Gitsigns reset_hunk<CR>]],
+    ['<Leader>hS'] = [[:Gitsigns stage_buffer<CR>]],
+    ['<Leader>hu'] = [[:Gitsigns undo_stage_hunk<CR>]],
+    ['<Leader>hR'] = [[:Gitsigns reset_buffer<CR>]],
+    ['<Leader>hp'] = [[:Gitsigns preview_hunk<CR>]],
+    ['<Leader>hb'] = [[:lua require"gitsigns".blame_line{full=true}<CR>]],
+    ['<Leader>tb'] = [[:Gitsigns toggle_current_line_blame<CR>]],
+    ['<Leader>hd'] = [[:Gitsigns diffthis<CR>']],
+    ['<Leader>hD'] = [[:lua require"gitsigns".diffthis("~")<CR>]],
+    ['<Leader>td'] = [[:Gitsigns toggle_deleted<CR>]],
   },
 
   -- Visual mode
@@ -52,6 +67,10 @@ local keymaps = {
     -- keeps selected text centered
     -- ['j']         = [[jzz]],
     -- ['k']         = [[kzz]],
+
+    -- gitsigns
+    ['<Leader>hs'] = [[:Gitsigns stage_hunk<CR>]],
+    ['<Leader>hr'] = [[:Gitsigns reset_hunk<CR>]],
   },
 
   -- Visual block mode
