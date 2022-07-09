@@ -22,6 +22,11 @@ return packer.startup(function(use)
     'lewis6991/gitsigns.nvim',
   }
 
+  use { -- explorer
+    'kyazdani42/nvim-tree.lua',
+      requires = 'kyazdani42/nvim-web-devicons',
+  }
+
   if PACKER_BOOTSTRAP then
     require('packer').sync()
   end
