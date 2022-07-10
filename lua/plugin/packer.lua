@@ -27,6 +27,10 @@ return packer.startup(function(use)
       requires = 'kyazdani42/nvim-web-devicons',
   }
 
+  use { -- treesitter
+    'nvim-treesitter/nvim-treesitter',
+  }
+
   if PACKER_BOOTSTRAP then
     require('packer').sync()
   end
