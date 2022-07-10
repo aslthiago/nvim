@@ -29,6 +29,8 @@ return packer.startup(function(use)
 
   use { -- treesitter
     'nvim-treesitter/nvim-treesitter',
+    'JoosepAlviste/nvim-ts-context-commentstring',
+    'numToStr/Comment.nvim',
   }
 
   if PACKER_BOOTSTRAP then
