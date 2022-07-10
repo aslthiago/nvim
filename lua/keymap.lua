@@ -61,6 +61,12 @@ local keymaps = {
     ['<Leader>hd'] = [[:Gitsigns diffthis<CR>']],
     ['<Leader>hD'] = [[:lua require"gitsigns".diffthis("~")<CR>]],
     ['<Leader>td'] = [[:Gitsigns toggle_deleted<CR>]],
+
+    -- telescope
+    ['<Leader>ff'] = [[:Telescope find_files<CR>]],
+    ['<Leader>fg'] = [[:Telescope live_grep<CR>]],
+    ['<Leader>fb'] = [[:Telescope buffers<CR>]],
+    ['<Leader>fh'] = [[:Telescope help_tags<CR>]],
   },
 
   -- Visual mode
