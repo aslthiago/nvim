@@ -33,6 +33,11 @@ return packer.startup(function(use)
     'numToStr/Comment.nvim',
   }
 
+  use { -- top bar
+    'akinsho/bufferline.nvim',
+      requires = 'kyazdani42/nvim-web-devicons',
+  }
+
   if PACKER_BOOTSTRAP then
     require('packer').sync()
   end
