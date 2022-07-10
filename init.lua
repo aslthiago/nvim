@@ -18,3 +18,4 @@ end
 require 'plugin.packer'
 require 'plugin.gitsigns'
 require 'plugin.nvim-tree'
+require 'plugin.treesitter'
