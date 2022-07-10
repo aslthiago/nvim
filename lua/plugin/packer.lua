@@ -25,6 +25,8 @@ return packer.startup(function(use)
   use { -- explorer
     'kyazdani42/nvim-tree.lua',
       requires = 'kyazdani42/nvim-web-devicons',
+    'nvim-telescope/telescope.nvim',
+      requires = 'nvim-lua/plenary.nvim',
   }
 
   use { -- treesitter
