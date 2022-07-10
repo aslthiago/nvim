@@ -42,6 +42,11 @@ local keymaps = {
     ['<']         = [[<<]],
     ['>']         = [[>>]],
 
+    -- nvim-tree
+    -- ['<F10>']      = [[:NvimTreeToggle<CR>]],
+    ['<F4>']       = [[:NvimTreeToggle<CR>]],
+    -- ['<Esc><Esc>'] = [[:NvimTreeFocus<CR>]],
+
     -- gitsigns
     ['<Leader>hn'] = [[:Gitsigns next_hunk<CR>]],
     ['<Leader>hm'] = [[:Gitsigns prev_hunk<CR>]],
