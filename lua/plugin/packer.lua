@@ -44,6 +44,10 @@ return packer.startup(function(use)
       requires = 'kyazdani42/nvim-web-devicons',
   }
 
+  use { -- utils
+    'norcalli/nvim-colorizer.lua',
+  }
+
   if PACKER_BOOTSTRAP then
     require('packer').sync()
   end
