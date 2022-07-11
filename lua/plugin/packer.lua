@@ -15,6 +15,7 @@ return packer.startup(function(use)
   use 'wbthomason/packer.nvim'
 
   use { -- colorscheme
+    'rktjmp/lush.nvim',
     'rebelot/kanagawa.nvim',
     'folke/tokyonight.nvim',
     'EdenEast/nightfox.nvim',
