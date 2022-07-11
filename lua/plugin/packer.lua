@@ -16,6 +16,9 @@ return packer.startup(function(use)
 
   use { -- colorscheme
     'rebelot/kanagawa.nvim',
+    'folke/tokyonight.nvim',
+    'EdenEast/nightfox.nvim',
+    'sainnhe/everforest',
   }
 
   use { -- version control
