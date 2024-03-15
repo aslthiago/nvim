@@ -69,6 +69,12 @@ set_aug {
     aug end
   ]],
   [[
+    aug reload_keymaps
+      au!
+      au BufWritePost keymaps.lua source <afile>
+    aug end
+  ]],
+  [[
     aug is_highlighted
       au!
       au CmdlineEnter /,\\? :set hls
